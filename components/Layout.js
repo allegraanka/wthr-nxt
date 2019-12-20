@@ -2,8 +2,7 @@ import Header from './Header';
 
 const layoutStyle = {
     padding: 20,
-    margin: 20,
-    border: '1px solid #DDD'
+    margin: 20
 }
 
 const Layout = props => (
