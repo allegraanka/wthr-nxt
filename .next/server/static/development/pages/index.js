@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2030,7 +2030,7 @@ const Index = props => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["de
     lineNumber: 7
   },
   __self: undefined
-}, "Batman TV Shows"), __jsx("ul", {
+}, "wthr currently"), __jsx("ul", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 8
@@ -2072,7 +2072,7 @@ Index.getInitialProps = async function () {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

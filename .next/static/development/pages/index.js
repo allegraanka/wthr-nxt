@@ -8494,7 +8494,7 @@ var Index = function Index(props) {
       lineNumber: 7
     },
     __self: this
-  }, "Batman TV Shows"), __jsx("ul", {
+  }, "wthr currently"), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -8561,7 +8561,7 @@ Index.getInitialProps = function _callee() {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Faanka%2FDesktop%2Fcode%2Fwthr-nxt%2Fpages%2Findex.js ***!
   \********************************************************************************************************************************/
@@ -8584,5 +8584,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
