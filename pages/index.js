@@ -1,31 +1,16 @@
-import Layout from '../components/Layout';
-import Link from 'next/link';
+// import Layout from '../components/Layout';
+// import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 
-const Index = props => (
-  <Layout>
-    <h1>Batman TV Shows</h1>
-    <ul>
-      {props.shows.map(show => (
-        <li key={show.id}>
-          <Link href="/p/[id]" as={`/p/${show.id}`}>
-            <a>{show.name}</a>
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </Layout>
-);
+function Index({wthr_obj}) {
+  return <div>wthr currently:{wthr_obj}</div>
+}
 
-Index.getInitialProps = async function() {
-  const res = await fetch('https://api.tvmaze.com/search/shows?q=batman');
+Index.getInitialProps = async ({ req }) => {
+  const res = await fetch('https://api.darksky.net/forecast/0e17dfdfdee5ff8839c6ffead1cf1b74/37.8267,-122.4233');
   const data = await res.json();
-
-  console.log(`Show data fetched. Count: ${data.length}`);
-
-  return {
-    shows: data.map(entry => entry.show)
-  };
+  console.log(data);
+  return {wthr_obj: JSON.stringify(data.currently)};
 };
 
 export default Index;
